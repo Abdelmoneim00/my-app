@@ -38,6 +38,11 @@ code {
   margin-right: 5%;
   margin-top: 1%;
   text-decoration: none;
+  transition: transform 1s;
+}
+
+.nav-bar a:hover {
+  transform: translateY(10px);
 }
 
 .Head-typo {
@@ -47,8 +52,17 @@ code {
   color: #909399;
 }
 
+.Head-typo h1 {
+  animation: Opacity 3s;
+}
+
+.Head-typo h3 {
+  animation: Opacity 5s;
+}
+
 .Head-typo p {
   color: white;
+  animation: Opacity 7s;
 }
 
 .Head-typo button {
@@ -62,9 +76,32 @@ code {
   color: white;
   background-color: black;
   cursor: pointer;
+  animation-name: Move;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
 
 
 
 
+
+
+
+/*changing the opacity for header section on reload*/
+@keyframes Opacity {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/* making the button moves */
+@keyframes Move {
+  from {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+  to {
+    opacity : 1;
+    transform: translateX(30px);
+  }
+}
