@@ -1,7 +1,7 @@
 import React from "react";
 import Personal from "../images/Personal.jpg"
 import Professional from "../images/Professional.jpg"
-import Coding5 from "../images/Coding5.jpg"
+import Coding from "../images/Coding.jpg"
 
 
 
@@ -10,16 +10,17 @@ function AboutMe() {
     const [professionalTypo, setProfessionalTypo] = React.useState(true);
     function personalSwitcher() {
         setPersonalTypo(!personalTypo);
-        setProfessionalTypo(professionalTypo== true ? !professionalTypo : professionalTypo)
+        setProfessionalTypo(professionalTypo === false )
+        console.log(personalTypo);
+    console.log(professionalTypo);
     }
 
     function professionalSwitcher() {
         setProfessionalTypo(!professionalTypo);
-        setPersonalTypo(personalTypo== true ? !professionalTypo : professionalTypo)
-    }
-
-    console.log(personalTypo);
+        setPersonalTypo(personalTypo === false )
+        console.log(personalTypo);
     console.log(professionalTypo);
+    }
 
     return (
     <section className="About-me">
@@ -34,8 +35,9 @@ function AboutMe() {
                 <span onClick={professionalSwitcher}>professional information</span>
             </div>
             <div className="info-typography">
-                {personalTypo == true && <h1>WE did it</h1>}
-                {professionalTypo == true && <h1>good Job</h1>}
+                {
+                    personalTypo === true ? <h1>we did it</h1> : <h1>good job</h1>
+                }
             </div>
         </div>
     </section>    
