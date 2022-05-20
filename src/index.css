@@ -99,9 +99,9 @@ code {
   text-align: center;
 }
 
-.container {
+#viewpoint {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   width: 90%;
   height: 50%;
@@ -123,6 +123,16 @@ code {
 
 .Header-flex p {
   text-align: center;
+}
+
+.pAnimation {
+  animation: Opacity 2s ;
+}
+
+#viewpoint div {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 8%;
 }
 
 
