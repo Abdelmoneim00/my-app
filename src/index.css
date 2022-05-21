@@ -130,10 +130,32 @@ code {
 }
 
 #viewpoint div {
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 8%;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 5%;
 }
+
+
+
+
+#active-1 {
+  width: 300px;
+  animation: Opacity 2s;
+}
+
+.h {
+  margin-top: 26px;
+  margin-left: 3px;
+}
+
+.group-flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  animation: Opacity 2s;
+}
+
+
 
 
 /*changing the opacity for header section on reload*/
