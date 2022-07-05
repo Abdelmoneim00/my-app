@@ -163,14 +163,17 @@ code {
   margin-top: 5%;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-}
-
 .Title {
   text-align: center;
 }
+
+.Projects-containter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
 
 
 
