@@ -1,5 +1,6 @@
 import React from "react"
 import discord from "../images/discord-log.png"
+import ProjectComp from "./smallComponents/ProjectComponent";
 
 
 function  Projects() {
@@ -13,11 +14,8 @@ function  Projects() {
                     <h3>Projects i'm proud of.</h3>
                 </div>
             <div className="Projects-containter">
-                <div className="Project-component">
-                    <div className="image-wrapper">
-                        <img src={discord}></img>
-                    </div>
-                </div>
+                <ProjectComp src={discord} typo="bot app" />
+                <ProjectComp src={discord} typo="bot app"/>
             </div>
         </section>
 

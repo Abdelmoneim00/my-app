@@ -178,7 +178,6 @@ code {
   width: 250px;
   height: 400px;
   margin-top: 3%;
-  border-radius: 20px;
 }
 
 .image-wrapper {
@@ -187,9 +186,18 @@ code {
 }
 
 .image-wrapper img {
+  display: block;
   width: 250px;
   height: fit-content;
-  border-radius: 20px;
+  border-radius: 180px;
+}
+
+.image-wrapper span {
+  display: none;
+}
+
+image-wrapper:hover span {
+  display: inline;
 }
 
 
