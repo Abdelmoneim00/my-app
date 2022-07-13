@@ -13,9 +13,16 @@ function  Projects() {
             <div className="Title">
                     <h3>Projects i'm proud of.</h3>
                 </div>
+                <div className="Projects-Dashboard">
+                    <nav id="elements">
+                        <span><i class="fa-solid fa-cloud"></i></span>
+                        <span><i class="fa-solid fa-cloud"></i></span>
+                        <span><i class="fa-solid fa-cloud"></i></span>
+                        <span><i class="fa-solid fa-cloud"></i></span>
+                    </nav>
+                </div>
             <div className="Projects-containter">
-                <ProjectComp src={discord} typo="bot app" />
-                <ProjectComp src={discord} typo="bot app"/>
+                <ProjectComp src={discord}/>
             </div>
         </section>
 

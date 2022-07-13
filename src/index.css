@@ -167,6 +167,27 @@ code {
   text-align: center;
 }
 
+.Projects-Dashboard {
+  display: flex;
+  justify-content: center;
+}
+
+.Projects-Dashboard nav {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 50px;
+  background-color: #909399;
+}
+
+#elements span {
+  cursor: pointer;
+  width: 50px;
+  color: rgb(42, 26, 81);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 .Projects-containter {
   display: flex;
   flex-direction: row;
@@ -175,30 +196,24 @@ code {
 }
 
 .Project-component {
-  width: 250px;
+  width: 250;
   height: 400px;
   margin-top: 3%;
+  border-radius: 50px;
 }
 
 .image-wrapper {
   width: 250px;
-  height: 140.62px;
+  height: 150px;
 }
 
 .image-wrapper img {
-  display: block;
   width: 250px;
   height: fit-content;
   border-radius: 180px;
 }
 
-.image-wrapper span {
-  display: none;
-}
 
-image-wrapper:hover span {
-  display: inline;
-}
 
 
 

@@ -7,7 +7,6 @@ function ProjectComp(props) {
         <div className="Project-component">
             <div className="image-wrapper">
                 <img src={props.src}></img>
-                <span>{props.typo}</span>
             </div>
         </div>
     )
