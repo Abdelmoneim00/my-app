@@ -172,6 +172,21 @@ code {
   justify-content: center;
 }
 
+.Main-project {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+}
+
+/* start making the slide on hover
+and don't forget to change the width and height
+for the new style
+*/
+
+.Main-project:hover + #project-slide {
+  background-color: red;
+}
+
 .Projects-Dashboard nav {
   display: flex;
   justify-content: center;
@@ -180,7 +195,7 @@ code {
   background-color: #909399;
 }
 
-#elements span {
+#project-slide span {
   cursor: pointer;
   width: 50px;
   color: rgb(42, 26, 81);

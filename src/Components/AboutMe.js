@@ -27,7 +27,7 @@ function AboutMe() {
     <section className="About-me" id="About-me">
         <div className="Header-flex">
         <h1 id="header-animation"></h1>
-        {view===true && <p className="pAnimation" id="fr-en">front-End Developer</p>}
+        {view===true && <p className="pAnimation" id="fr-en">Front-End Developer</p>}
         </div>
         <div id="viewpoint">
             <div id="active">
