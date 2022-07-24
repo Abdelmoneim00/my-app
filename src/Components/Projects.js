@@ -11,21 +11,18 @@ function  Projects() {
 
         <section className="Projects">
             <div className="Title" >
-                    <h3>Projects i'm proud of.</h3>
-                </div>
-                <div className="Projects-Dashboard">
-                    <div className="Main-project">
-
-                    </div>
-                    <nav id="project-slide">
-                        <span id="nav-element"><i className="fa-solid fa-cloud"></i></span>
-                        <span id="nav-element"><i className="fa-solid fa-cloud"></i></span>
-                        <span id="nav-element"><i className="fa-solid fa-cloud"></i></span>
-                        <span id="nav-element"><i className="fa-solid fa-cloud"></i></span>
-                    </nav>
-                </div>
+                <h3>Projects i'm proud of.</h3>
+            </div>
             <div className="Projects-containter">
                 <ProjectComp src={discord}/>
+                <div className="Projects-menu">
+                    <nav className="Projects-nav">
+                        <ul id="menu-element">Sleepy bot</ul>
+                        <ul id="menu-element">Wheather app</ul>
+                        <ul id="menu-element">Note app</ul>
+                        <ul id="menu-element">Tenzies game</ul>
+                    </nav>
+                </div>
             </div>
         </section>
 

@@ -158,56 +158,41 @@ code {
 
 .Projects {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   color: white;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 .Title {
   text-align: center;
 }
 
-.Projects-Dashboard {
-  display: flex;
-  justify-content: center;
-}
 
-.Main-project {
-  width: 100px;
-  height: 100px;
-  background-color: white;
-}
-
-/* start making the slide on hover
-and don't forget to change the width and height
-for the new style
-*/
-
-.Main-project:hover + #project-slide {
-  background-color: red;
-}
-
-.Projects-Dashboard nav {
-  display: flex;
-  justify-content: center;
-  width: 300px;
-  height: 50px;
-  background-color: #909399;
-}
-
-#project-slide span {
-  cursor: pointer;
-  width: 50px;
-  color: rgb(42, 26, 81);
-  margin-left: 5%;
-  margin-right: 5%;
-}
 
 .Projects-containter {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   padding-top: 50px;
+}
+
+.Projects-nav {
+  width: 300px;
+  height: fit-content;
+  font-size: 1.2rem;
+  padding-left: 100px;
+  padding-top: 100px;
+
+}
+
+.Projects-nav ul {
+  cursor: pointer;
+}
+
+
+
+#menu-element:focus {
+  font-size: 1.6rem;
 }
 
 .Project-component {
@@ -238,12 +223,14 @@ for the new style
 
 
 /*changing the opacity for header section on reload*/
+
+
 @keyframes Opacity {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
 
-/* making the button moves */
+/* making the button moves on load */
 @keyframes Move {
   from {
     opacity: 0;
@@ -252,5 +239,15 @@ for the new style
   to {
     opacity : 1;
     transform: translateX(30px);
+  }
+}
+
+@keyframes ChangeSize {
+  0% {
+    font-size: 1.2rem;
+  }
+  100% {
+    font-size: 1.5rem;
+    color: #909399;
   }
 }
