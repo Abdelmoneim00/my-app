@@ -1,5 +1,5 @@
 import React from "react"
-import discord from "../images/discord-log.png"
+import discord from "../images/disc.png"
 import ProjectComp from "./smallComponents/ProjectComponent";
 
 

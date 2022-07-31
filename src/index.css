@@ -4,6 +4,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 code {
@@ -172,16 +174,17 @@ code {
 .Projects-containter {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 50px;
 }
 
 .Projects-nav {
-  width: 300px;
+  width: 200px;
   height: fit-content;
   font-size: 1.2rem;
-  padding-left: 100px;
-  padding-top: 100px;
+  margin-left: 100%;
+  padding-top: 500px;
+  margin-right: 0px;
 
 }
 
@@ -191,26 +194,29 @@ code {
 
 
 
-#menu-element:focus {
-  font-size: 1.6rem;
+#menu-element:hover {
+  animation: Move 1s forwards;
 }
 
+
 .Project-component {
-  width: 250;
+  width: 250px;
   height: 400px;
   margin-top: 3%;
-  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .image-wrapper {
-  width: 250px;
-  height: 150px;
+  width: 500px;
+  height: fit-content;
 }
 
 .image-wrapper img {
-  width: 250px;
-  height: fit-content;
-  border-radius: 180px;
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
 }
 
 
@@ -238,7 +244,7 @@ code {
   }
   to {
     opacity : 1;
-    transform: translateX(30px);
+    transform: translateX(20px);
   }
 }
 
